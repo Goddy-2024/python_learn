@@ -11,11 +11,11 @@ print(my_name.describe())
 #OOP in encapsulation of data
 class BankAcc:
     def __init__(self, balance):
-        self.__balance = balance
+        self.__balance = balance #__balance is created as a private variable
     def deposit(self, amount):
         self.__balance += amount
     def get_balance(self):
         return self.__balance
-acc = BankAcc(26000)
-acc.deposit(2000)
-print(acc.get_balance())
+acc = BankAcc(int(input("Enter Your account balance before deposit: ")))
+acc.deposit(int(input("Enter the amount you wish to deposit: ")))
+print("Your account balance after deposit: " + str(acc.get_balance()))
