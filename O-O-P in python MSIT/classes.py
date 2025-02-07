@@ -4,8 +4,8 @@ class StudName:
         self.fname = fname
         self.lname = lname
     def describe(self):
-        return f"My name is {self.fname} {self.lname}"
-my_name = StudName("Godswill", "Omondi") 
+        return f"Your Full Name: {self.fname} {self.lname}"
+my_name = StudName(input("Enter your first name: "), input("Enter your last name: ")) 
 print(my_name.describe())
 
 #OOP in encapsulation of data
